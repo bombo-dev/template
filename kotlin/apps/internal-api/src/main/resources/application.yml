@@ -1,0 +1,17 @@
+spring:
+  profiles:
+    active: local
+  application:
+    name: internal-api
+  config:
+    import:
+      - monitoring.yml
+      - logging.yml
+      - http-client.yml
+
+server:
+  tomcat:
+    max-connections: 20000
+    threads:
+      max: 600
+      min-spare: 100

@@ -1,0 +1,12 @@
+spring.profiles.active: local
+
+spring:
+  config:
+    import:
+      - monitoring.yml
+      - logging.yml
+      - db-core.yml
+      - http-client.yml
+
+---
+spring.config.activate.on-profile: local
