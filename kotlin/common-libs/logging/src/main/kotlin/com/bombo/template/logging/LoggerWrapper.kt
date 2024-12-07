@@ -2,7 +2,7 @@ package com.bombo.template.logging
 
 import org.slf4j.Logger
 
-class SimpleLogger(
+class LoggerWrapper(
     private val logger: Logger
 ) {
     fun info(message: String) {
